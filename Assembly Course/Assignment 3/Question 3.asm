@@ -6,7 +6,8 @@
 .data
 	array db -32, 52, 66, -22, 12
 	N equ $ - array
-	numberString db 7 dup('$')
+	numberString db 4 dup('$')
+	
 .code
 	mov ax, @data
 	mov ds, ax
@@ -43,7 +44,7 @@
 			cmp di, N
 			je exit
 			mov al, array[di]
-			mov si, offset numberString + 5
+			mov si, offset numberString + 2
 			cmp al, 0
 			jge next
 			neg al
@@ -83,7 +84,7 @@
 					xor bx, bx
 
 					reset_loop:
-						cmp bx, 7
+						cmp bx, 4
 						jne continue
 						inc di
 						jmp print_loop
