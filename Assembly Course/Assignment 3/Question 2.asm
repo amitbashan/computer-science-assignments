@@ -53,8 +53,8 @@
 				cmp al, 0 ; Check if it's the loop's last iteration
 				jne next ; If not, jump back!
 				cmp array[bx], 0 ; Was the number negative?
-				jge _end ; If it wasn't, print it
-				mov byte ptr [si], '-' ; Else, add a negative sign
+				jge _end ; If it wasn't, print it already
+				mov byte ptr [si], '-' ; Else, add a negative sign and then print
 				dec si
 
 			_end:
