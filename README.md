@@ -1,3 +1,2 @@
-# cs-assignments
-Computer science undergraduate degree assignments source code  
+# BSc Computer Science Undergraduate Degree Assignments Source Code
 Some code could be improved, but I'm too lazy.
