@@ -6,8 +6,8 @@
 	numString db 4 dup(' '), '$'
 
 .code
-	mov	ax,	@data
-	mov	ds,	ax
+	mov ax, @data
+	mov ds, ax
 
 	mov ax, num
 	mov bx, 10
