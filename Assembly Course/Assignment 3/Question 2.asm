@@ -3,7 +3,7 @@
 
 .data
 	num dw 12345
-	numString db 4 dup(' '), '$'
+	number_string db 4 dup(' '), '$'
 
 .code
 	mov ax, @data
@@ -11,7 +11,7 @@
 
 	mov ax, num
 	mov bx, 10
-	mov si, offset numString + 3
+	mov si, offset number_string + 3
 
 	_loop:
 		xor dx, dx
