@@ -11,14 +11,19 @@
 	mov ds, ax
 
 	xor ax, ax
-	xor bx, bx
+	mov bx, N - 1
 
 	_loop:
-		cmp bx, N
-		je done
+		cmp bx, 0
+		jl done
 		shl A[bx], k
-		inc bx
-		jmp _loop
+		jnc continue
+		rcl A[bx - 1], 1
+		dec bx
+
+		continue:
+			dec bx
+			jmp _loop
 
 	done:
 		.exit
