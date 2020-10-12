@@ -5,6 +5,7 @@
 	A dw 12, 5, 8, -1, 4
 	B dw -2, 9, 0, 18, 3
 	C dw 5 dup (?)
+
 .code
 	mov ax, @data
 	mov ds, ax
