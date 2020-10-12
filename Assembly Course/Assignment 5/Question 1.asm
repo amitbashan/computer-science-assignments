@@ -49,7 +49,7 @@
 				pop bp
 				ret 2
 		
-		print_signed_number ENDP
+	print_signed_number ENDP
 
 	_exit:
 		.exit
