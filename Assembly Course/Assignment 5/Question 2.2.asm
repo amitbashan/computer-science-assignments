@@ -21,7 +21,7 @@
 		mov cx, [bp + 6] ; Second array offset.
 		mov dx, [bp + 8] ; Third array offset.
 		mov si, [bp + 10] ; Array size.
-		sub si, 2 ; If we the size as the starting offset it will point to a value outside the array, so we subtract 2 bytes from the size.
+		sub si, 2 ; If the size as the starting offset it will point to a value outside the array, so we subtract 2 bytes from the size.
 
 		array_sum_loop:
 			cmp si, 0
