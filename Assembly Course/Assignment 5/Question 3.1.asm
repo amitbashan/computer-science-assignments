@@ -34,11 +34,11 @@
 			jmp _loop
 
 		not_prime:
-			mov al, 0
+			xor al, al
 			jmp done
 
 		prime:
-			mov al, 1 
+			or al, 1
 
 		done:
 			pop bp
