@@ -38,7 +38,7 @@
 			jmp done
 
 		prime:
-			or al, 1
+			mov al, 1
 
 		done:
 			pop bp
