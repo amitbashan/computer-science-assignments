@@ -35,7 +35,7 @@
 
 		not_prime:
 			xor al, al
-			jmp done
+			jmp is_prime_number_done
 
 		prime:
 			mov al, 1
