@@ -19,8 +19,8 @@
 		jl not_prime
 		je prime
 		mov bx, 2 ; Divisor/Counter.
-		
-		_loop:
+	
+		is_prime_number_loop:
 			cmp bx, ax
 			jg prime
 			xor dx, dx
@@ -31,7 +31,7 @@
 			test dx, dx
 			je not_prime
 			inc bx
-			jmp _loop
+			jmp is_prime_number_loop
 
 		not_prime:
 			xor al, al
@@ -40,7 +40,7 @@
 		prime:
 			mov al, 1
 
-		done:
+		is_prime_number_done:
 			pop bp
 			ret 2
 	is_prime_number ENDP
