@@ -13,7 +13,7 @@
 	push offset A
 	call highest_prime_number ; AH = 0x71 (113)
 
-	jmp _exit
+	.exit
 
 	highest_prime_number PROC NEAR
 		push bp
@@ -46,7 +46,6 @@
 			mov ah, dh
 			pop bp
 			ret 4
-
 	highest_prime_number ENDP
 
 	is_prime_number PROC NEAR
@@ -79,7 +78,4 @@
 			pop bp
 			ret 2
 	is_prime_number ENDP
-
-	_exit:
-		.exit
 end

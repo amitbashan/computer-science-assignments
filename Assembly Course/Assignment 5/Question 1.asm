@@ -10,7 +10,8 @@
 	
 	push number
 	call print_signed_number
-	jmp _exit
+	
+	.exit
 
 	print_signed_number PROC NEAR
 		push bp
@@ -50,7 +51,4 @@
 				ret 2
 		
 	print_signed_number ENDP
-
-	_exit:
-		.exit
 end

@@ -9,7 +9,8 @@
 
 	push 17
 	call is_prime_number ; AL = 1
-	jmp _exit
+	
+	.exit
 
 	is_prime_number PROC NEAR
 		push bp
@@ -41,7 +42,4 @@
 			pop bp
 			ret 2
 	is_prime_number ENDP
-
-	_exit:
-		.exit
 end

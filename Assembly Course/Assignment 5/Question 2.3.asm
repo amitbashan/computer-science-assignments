@@ -23,7 +23,7 @@
 	call array_sum
 
 	mov ah, 9
-	mov dx, offset a_array_string
+	mov dx, offset a_array_string ; Could've made this into a procedure too but it seems to be unnecessary.
 	int 21h
 	push array_size
 	push offset A
@@ -45,7 +45,7 @@
 	push offset C
 	call print_array
 
-	jmp _exit
+	.exit
 
 	print_array PROC NEAR
 		push bp
@@ -171,7 +171,4 @@
 				ret 2
 		
 	print_signed_number ENDP
-
-	_exit:
-		.exit
 end

@@ -11,7 +11,7 @@
 	mov ds, ax
 
 	; We're not told to use the procedure, so just exit.
-	jmp _exit
+	.exit
 
 	array_sum PROC NEAR
 		push bp
@@ -53,7 +53,4 @@
 		pop bp
 		ret 4
 	signed_sum ENDP
-
-	_exit:
-		.exit
 end

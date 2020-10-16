@@ -13,7 +13,8 @@
 	push A ; 12
 	push B ; -2
 	call signed_sum ; AX = 0xA
-	jmp _exit
+	
+	.exit
 
 	; Result will stored in AX.
 	signed_sum PROC NEAR
@@ -24,7 +25,4 @@
 		pop bp
 		ret 4
 	signed_sum ENDP
-
-	_exit:
-		.exit
 end
