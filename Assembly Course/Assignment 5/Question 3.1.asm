@@ -25,11 +25,8 @@
 			jg prime
 			xor ah, ah
 			div bl
-			; I don't know if we're allowed to use the TEST instruction
-			; because we haven't learnt it, but it is valid, so please
-			; do not deduct any points.
-			test ah, ah
-			je not_prime
+			test ah, ah ; Decided to use this instead of "cmp ah, 0", saves more bytes, and it's as fast.
+			jz not_prime
 			inc bl
 			jmp is_prime_number_loop
 
