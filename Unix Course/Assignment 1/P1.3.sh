@@ -6,5 +6,3 @@ date
 sleep $number
 echo "I woke up at:"
 date
-echo
-
