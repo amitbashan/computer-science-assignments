@@ -45,7 +45,7 @@ BEGIN {
 		sum[3] += array[array_length]
 	} else if (FNR == array_length) {
 		sum[2] += array[1]
-        sum[3] += array[array_length]
+		sum[3] += array[array_length]
 
 		for (x = 1; x <= array_length; ++x) {
 			sum[4] += array[x]
