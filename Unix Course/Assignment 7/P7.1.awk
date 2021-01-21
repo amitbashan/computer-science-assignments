@@ -11,8 +11,8 @@
 	sum = 0
 
 	for (x = 1; x <= NF; ++x) {
-    	array[x, NR] = $x
-    }
+		array[x, NR] = $x
+	}
 
 	for (x = 0; x <= NF; ++x) {
 		current_max = 0
