@@ -50,11 +50,11 @@ function matrix_difference(file1, file2) {
 			}
 
 			if (matrix1[x, y] != "") {
-				printf "%s ", matrix1[x, y] - matrix2[x, y]
+				printf "%s ", matrix1[x, y] - matrix2[x, y] > "tmp"
 			}
 		}
 
-		print
+		print > "tmp"
 	}
 }
 
