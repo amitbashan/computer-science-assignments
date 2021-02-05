@@ -41,5 +41,5 @@ done
 if [ -z "$output" ]; then
 	echo "None"
 else
-	echo "$output" | sort -bn | uniq | tail -n +2
+	echo "$output" | sort | tail -n +2
 fi
