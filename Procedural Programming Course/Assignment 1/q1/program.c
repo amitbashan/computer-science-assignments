@@ -44,8 +44,8 @@ int main() {
 		if (indicesInput[index] - '0' > numDigits) return 1;
 
     int num = atoi(numInput), indices = atoi(indicesInput);
-    
-    printf("\nQuestion 1.1:\n");
+
+  printf("\nQuestion 1.1:\n");
 	printf("%d\n", createNumByIdx(num, indices));
 	printf("\nQuestion 1.2:\n");
 	printf("%d\n", createNumByIdx2(num, indices));
